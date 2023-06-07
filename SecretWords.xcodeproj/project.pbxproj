@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5919D1072A30F0A1009AEFE1 /* GuessTheFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919D1062A30F0A1009AEFE1 /* GuessTheFlagApp.swift */; };
-		5919D1092A30F0A1009AEFE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5919D1082A30F0A1009AEFE1 /* ContentView.swift */; };
-		5919D10B2A30F0A2009AEFE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5919D10A2A30F0A2009AEFE1 /* Assets.xcassets */; };
-		5919D10E2A30F0A2009AEFE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5919D10D2A30F0A2009AEFE1 /* Preview Assets.xcassets */; };
+		590820082A3145FF008A6D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590820072A3145FE008A6D3F /* Assets.xcassets */; };
+		59E6CDA52A3140FE0006459F /* SecretWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6CDA42A3140FE0006459F /* SecretWordsApp.swift */; };
+		59E6CDAA2A3141170006459F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6CDA92A3141170006459F /* HomeView.swift */; };
+		59E6CDAC2A31411A0006459F /* Logica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6CDAB2A31411A0006459F /* Logica.swift */; };
+		59E6CDAE2A31411E0006459F /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6CDAD2A31411E0006459F /* CollectionView.swift */; };
+		59E6CDB02A3141260006459F /* SecretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6CDAF2A3141260006459F /* SecretView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5919D1032A30F0A1009AEFE1 /* GuessTheFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessTheFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5919D1062A30F0A1009AEFE1 /* GuessTheFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagApp.swift; sourceTree = "<group>"; };
-		5919D1082A30F0A1009AEFE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5919D10A2A30F0A2009AEFE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5919D10D2A30F0A2009AEFE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		590820032A314255008A6D3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		590820072A3145FE008A6D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5919D1032A30F0A1009AEFE1 /* SecretWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E6CDA42A3140FE0006459F /* SecretWordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretWordsApp.swift; sourceTree = "<group>"; };
+		59E6CDA92A3141170006459F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		59E6CDAB2A31411A0006459F /* Logica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logica.swift; sourceTree = "<group>"; };
+		59E6CDAD2A31411E0006459F /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		59E6CDAF2A3141260006459F /* SecretView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,10 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590820022A314255008A6D3F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				590820032A314255008A6D3F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		590820042A3143D6008A6D3F /* SecretWords */ = {
+			isa = PBXGroup;
+			children = (
+				59E6CDA42A3140FE0006459F /* SecretWordsApp.swift */,
+				59E6CDAD2A31411E0006459F /* CollectionView.swift */,
+				59E6CDA92A3141170006459F /* HomeView.swift */,
+				59E6CDAF2A3141260006459F /* SecretView.swift */,
+				59E6CDAB2A31411A0006459F /* Logica.swift */,
+				590820072A3145FE008A6D3F /* Assets.xcassets */,
+			);
+			path = SecretWords;
+			sourceTree = "<group>";
+		};
 		5919D0FA2A30F0A1009AEFE1 = {
 			isa = PBXGroup;
 			children = (
-				5919D1052A30F0A1009AEFE1 /* GuessTheFlag */,
+				590820042A3143D6008A6D3F /* SecretWords */,
+				590820022A314255008A6D3F /* Preview Content */,
 				5919D1042A30F0A1009AEFE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,36 +70,17 @@
 		5919D1042A30F0A1009AEFE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5919D1032A30F0A1009AEFE1 /* GuessTheFlag.app */,
+				5919D1032A30F0A1009AEFE1 /* SecretWords.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5919D1052A30F0A1009AEFE1 /* GuessTheFlag */ = {
-			isa = PBXGroup;
-			children = (
-				5919D1062A30F0A1009AEFE1 /* GuessTheFlagApp.swift */,
-				5919D1082A30F0A1009AEFE1 /* ContentView.swift */,
-				5919D10A2A30F0A2009AEFE1 /* Assets.xcassets */,
-				5919D10C2A30F0A2009AEFE1 /* Preview Content */,
-			);
-			path = GuessTheFlag;
-			sourceTree = "<group>";
-		};
-		5919D10C2A30F0A2009AEFE1 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				5919D10D2A30F0A2009AEFE1 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5919D1022A30F0A1009AEFE1 /* GuessTheFlag */ = {
+		5919D1022A30F0A1009AEFE1 /* SecretWords */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5919D1112A30F0A2009AEFE1 /* Build configuration list for PBXNativeTarget "GuessTheFlag" */;
+			buildConfigurationList = 5919D1112A30F0A2009AEFE1 /* Build configuration list for PBXNativeTarget "SecretWords" */;
 			buildPhases = (
 				5919D0FF2A30F0A1009AEFE1 /* Sources */,
 				5919D1002A30F0A1009AEFE1 /* Frameworks */,
@@ -82,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = GuessTheFlag;
+			name = SecretWords;
 			productName = GuessTheFlag;
-			productReference = 5919D1032A30F0A1009AEFE1 /* GuessTheFlag.app */;
+			productReference = 5919D1032A30F0A1009AEFE1 /* SecretWords.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5919D0FE2A30F0A1009AEFE1 /* Build configuration list for PBXProject "GuessTheFlag" */;
+			buildConfigurationList = 5919D0FE2A30F0A1009AEFE1 /* Build configuration list for PBXProject "SecretWords" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5919D1022A30F0A1009AEFE1 /* GuessTheFlag */,
+				5919D1022A30F0A1009AEFE1 /* SecretWords */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5919D10E2A30F0A2009AEFE1 /* Preview Assets.xcassets in Resources */,
-				5919D10B2A30F0A2009AEFE1 /* Assets.xcassets in Resources */,
+				590820082A3145FF008A6D3F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5919D1092A30F0A1009AEFE1 /* ContentView.swift in Sources */,
-				5919D1072A30F0A1009AEFE1 /* GuessTheFlagApp.swift in Sources */,
+				59E6CDB02A3141260006459F /* SecretView.swift in Sources */,
+				59E6CDAA2A3141170006459F /* HomeView.swift in Sources */,
+				59E6CDAE2A31411E0006459F /* CollectionView.swift in Sources */,
+				59E6CDAC2A31411A0006459F /* Logica.swift in Sources */,
+				59E6CDA52A3140FE0006459F /* SecretWordsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +274,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GuessTheFlag/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 8Q8855SSVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Secret Words";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,7 +293,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ikurlovich.GuessTheFlag;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikurlovich.SecretWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -293,12 +306,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GuessTheFlag/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 8Q8855SSVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Secret Words";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,7 +325,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ikurlovich.GuessTheFlag;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikurlovich.SecretWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +336,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5919D0FE2A30F0A1009AEFE1 /* Build configuration list for PBXProject "GuessTheFlag" */ = {
+		5919D0FE2A30F0A1009AEFE1 /* Build configuration list for PBXProject "SecretWords" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5919D10F2A30F0A2009AEFE1 /* Debug */,
@@ -329,7 +345,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5919D1112A30F0A2009AEFE1 /* Build configuration list for PBXNativeTarget "GuessTheFlag" */ = {
+		5919D1112A30F0A2009AEFE1 /* Build configuration list for PBXNativeTarget "SecretWords" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5919D1122A30F0A2009AEFE1 /* Debug */,
