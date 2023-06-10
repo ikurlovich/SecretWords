@@ -88,7 +88,8 @@ struct HomeView: View {
                         ScrollView {
                             Text($vm.all.wrappedValue.description)
                                 .foregroundColor(.white)
-                        }
+                                .padding()
+                        } .frame(height: 100)
                         
                     }
                 }

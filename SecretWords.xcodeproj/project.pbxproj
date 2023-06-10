@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		590820082A3145FF008A6D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590820072A3145FE008A6D3F /* Assets.xcassets */; };
+		5908200A2A34BBCF008A6D3F /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590820092A34BBCF008A6D3F /* InstructionView.swift */; };
 		59E6CDA52A3140FE0006459F /* SecretWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6CDA42A3140FE0006459F /* SecretWordsApp.swift */; };
 		59E6CDAA2A3141170006459F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6CDA92A3141170006459F /* HomeView.swift */; };
 		59E6CDAC2A31411A0006459F /* Logica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E6CDAB2A31411A0006459F /* Logica.swift */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		590820032A314255008A6D3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		590820072A3145FE008A6D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		590820092A34BBCF008A6D3F /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		5919D1032A30F0A1009AEFE1 /* SecretWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E6CDA42A3140FE0006459F /* SecretWordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretWordsApp.swift; sourceTree = "<group>"; };
 		59E6CDA92A3141170006459F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 				59E6CDAD2A31411E0006459F /* CollectionView.swift */,
 				59E6CDA92A3141170006459F /* HomeView.swift */,
 				59E6CDAF2A3141260006459F /* SecretView.swift */,
+				590820092A34BBCF008A6D3F /* InstructionView.swift */,
 				59E6CDAB2A31411A0006459F /* Logica.swift */,
 				590820072A3145FE008A6D3F /* Assets.xcassets */,
 			);
@@ -149,6 +152,7 @@
 				59E6CDAE2A31411E0006459F /* CollectionView.swift in Sources */,
 				59E6CDAC2A31411A0006459F /* Logica.swift in Sources */,
 				59E6CDA52A3140FE0006459F /* SecretWordsApp.swift in Sources */,
+				5908200A2A34BBCF008A6D3F /* InstructionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

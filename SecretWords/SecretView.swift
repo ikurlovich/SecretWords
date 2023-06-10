@@ -6,6 +6,8 @@ struct SecretView: View {
     
     @State private var themeEnter = ""
     @State private var text2 = ""
+    @State private var secretAlert1 = false
+    @State private var secretAlert2 = false
     
     var body: some View {
         ZStack {
@@ -83,13 +85,33 @@ struct SecretView: View {
                     } else {
                         Text("Слов пока нет")
                             .foregroundColor(.white)
+                            .padding()
                     }
                     
                     HStack {
+                        Spacer()
+                        Button(action: { secretAlert1 = true }, label: { Text("Удалить \nслова").foregroundColor(.yellow) })
+                            .buttonStyle(.bordered)
+                            .tint(.white)
+                            .alert("Удалить слова?", isPresented: $secretAlert1) {
+                                Button("Да") { vm.accepted.removeAll() }
+                                Button("Нет", role: .cancel) { }
+                            } message: {
+                                Text("функция очистит все загаданные слова")
+                            }
                         
-                        Button(action: { vm.accepted.removeAll() }, label: { Text("Удалить слова").foregroundColor(.yellow) })
+                        Spacer()
                         
-                        Button(action: { vm.theme = "пусто" }, label: { Text("Удалить тему").foregroundColor(.yellow) })
+                        Button(action: { secretAlert2 = true }, label: { Text("Удалить \nтему").foregroundColor(.yellow) })
+                            .buttonStyle(.bordered)
+                            .tint(.white)
+                            .alert("Удалить тему?", isPresented: $secretAlert2) {
+                                Button("Да") { vm.theme = "пусто" }
+                                Button("Нет", role: .cancel) { }
+                            } message: {
+                                Text("функция очистит установленную тему")
+                            }
+                        Spacer()
                         
                     }
                 }
