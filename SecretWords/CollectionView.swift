@@ -5,7 +5,9 @@ struct CollectionView: View {
     @StateObject private var vm = LogicaVM()
     
     var body: some View {
+        
         TabView {
+            
             HomeView()
                 .tabItem {
                     Text("Игра")
@@ -16,6 +18,7 @@ struct CollectionView: View {
                 .tabItem {
                     Label("Настройки", systemImage: "gearshape.fill")
                 }
+            
         }
         .environmentObject(vm)
     }

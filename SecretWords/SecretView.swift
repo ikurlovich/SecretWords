@@ -3,6 +3,7 @@ import SwiftUI
 struct SecretView: View {
     
     @EnvironmentObject private var vm: LogicaVM
+    
     @State private var themeEnter = ""
     @State private var text2 = ""
     
@@ -10,11 +11,14 @@ struct SecretView: View {
         ZStack {
             
             VStack(spacing: 0) {
+                
                 RadialGradient(gradient: Gradient(colors: [.indigo, .black]), center: .center, startRadius: 20, endRadius: 600)
+                
             }
             .ignoresSafeArea()
             
             VStack {
+                
                 VStack(spacing: 20) {
                     
                     Image(systemName: "gearshape")
@@ -29,6 +33,7 @@ struct SecretView: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
                         .padding(.horizontal, 30)
+                    
                 }
                 .foregroundColor(.secondary)
                 .padding(.vertical, 20)
@@ -36,21 +41,26 @@ struct SecretView: View {
                 .background(.ultraThinMaterial)
                 .cornerRadius(20)
                 
-                
                 GroupBox {
+                    
                     HStack {
+                        
                         TextField("Тема", text: $themeEnter)
                         
-                        Button(action: { if themeEnter != "" { vm.theme = themeEnter } }, label: { Text("Сохранить").foregroundColor(.indigo) })
+                        Button(action: { if themeEnter != "" { vm.theme = themeEnter }; themeEnter = "" }, label: { Text("Сохранить").foregroundColor(.indigo) })
+                        
                     }
                 }
                 .frame(width: 260)
                 
                 GroupBox {
+                    
                     HStack {
+                        
                         TextField("Слово", text: $text2)
                         
-                        Button(action: { if text2 != "" { vm.accepted.append(text2) } }, label: { Text("Сохранить").foregroundColor(.indigo) })
+                        Button(action: { if text2 != "" { vm.accepted.append(text2) }; text2 = "" }, label: { Text("Сохранить").foregroundColor(.indigo) })
+                        
                     }
                 }
                 .frame(width: 260)
@@ -60,19 +70,27 @@ struct SecretView: View {
                     Text("Загаданные слова")
                         .multilineTextAlignment(.center)
                         .foregroundColor(.yellow)
+                    
                     if vm.accepted != [] {
-                        Text($vm.accepted.wrappedValue.description)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(.white)
-                            .padding(.horizontal, 30)
+                        
+                        ScrollView {
+                            Text($vm.accepted.wrappedValue.description)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 30)
+                        } .frame(height: 100)
+                        
                     } else {
                         Text("Слов пока нет")
                             .foregroundColor(.white)
                     }
+                    
                     HStack {
+                        
                         Button(action: { vm.accepted.removeAll() }, label: { Text("Удалить слова").foregroundColor(.yellow) })
                         
                         Button(action: { vm.theme = "пусто" }, label: { Text("Удалить тему").foregroundColor(.yellow) })
+                        
                     }
                 }
                 .foregroundColor(.secondary)
